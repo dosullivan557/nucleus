@@ -33,4 +33,4 @@ const email = "email@domain.com";
 
 console.log(emailRegex.test(email)); // true
 
-``
+```
