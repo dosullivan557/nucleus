@@ -1,4 +1,6 @@
 import Button from './button/Button';
-import Textfield from './textfield/Textfield';
 import Chip from './chip/Chip';
-export { Button, Chip, Textfield };
+import Dropdown from './dropdown/Dropdown';
+import Textfield from './textfield/Textfield';
+
+export { Button, Chip, Dropdown, Textfield };
