@@ -1,4 +1,4 @@
-export interface ChipProps { 
-    label: string;
-    className?: string;
+export interface ChipProps {
+  label: string;
+  className?: string;
 }
