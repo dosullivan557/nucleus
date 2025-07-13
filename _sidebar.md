@@ -2,6 +2,7 @@
   - [Atoms](components/Atoms)
   - atoms/
     - [button](components/atoms/button)
+    - [chip](components/atoms/chip)
     - [textfield](components/atoms/textfield)
 - [components](components)
 - [getting-started](getting-started)
