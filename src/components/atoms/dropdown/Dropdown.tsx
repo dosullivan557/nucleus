@@ -1,13 +1,13 @@
-import styles from "./Dropdown.module.css";
-import { DropdownProps, DropdownType } from "./Dropdown.types";
-import { countries, getEmojiFlag } from "countries-list";
-import type { TContinentCode, TCountryCode } from "countries-list";
+import styles from './Dropdown.module.css';
+import { DropdownProps, DropdownType } from './Dropdown.types';
+import { countries, getEmojiFlag } from 'countries-list';
+import type { TCountryCode } from 'countries-list';
 
 const Dropdown: React.FC<DropdownProps> = ({
   options,
-  className = "",
+  className = '',
   onChange,
-  type,
+  type
 }) => {
   const buildOptions = () => {
     if (options) {
@@ -27,7 +27,11 @@ const Dropdown: React.FC<DropdownProps> = ({
           const country = countries[code];
           const eachOption = `${getEmojiFlag(code)} ${country.name}`;
           return (
-            <option className={styles.option} key={countryCode} value={eachOption}>
+            <option
+              className={styles.option}
+              key={countryCode}
+              value={eachOption}
+            >
               {eachOption}
             </option>
           );
