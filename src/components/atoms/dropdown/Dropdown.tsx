@@ -1,10 +1,10 @@
-import styles from "./Dropdown.module.css";
-import { DropdownProps } from "./Dropdown.types";
+import styles from './Dropdown.module.css';
+import { DropdownProps } from './Dropdown.types';
 
 const Dropdown: React.FC<DropdownProps> = ({
   options,
-  className = "",
-  onChange,
+  className = '',
+  onChange
 }) => {
   return (
     <select
