@@ -1,4 +1,4 @@
-const emailRegex =
+const emailRegex: RegExp =
   /^[a-z0-9._%+-]+@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z]{2,}$/i;
 /**
  * Validates an email address using a regular expression.
