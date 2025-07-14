@@ -39,6 +39,7 @@
   },
   "homepage": "https://github.com/dosullivan557/nucleus#readme",
   "devDependencies": {
+    "@storybook/addon-a11y": "^9.0.16",
     "@storybook/addon-docs": "^9.0.13",
     "@storybook/addon-onboarding": "^9.0.13",
     "@storybook/addon-webpack5-compiler-swc": "^3.0.0",
@@ -64,6 +65,7 @@
     "typescript-eslint": "^8.35.0"
   },
   "dependencies": {
-    "countries-list": "^3.1.1"
+    "countries-list": "^3.1.1",
+    "uuid": "^11.1.0"
   }
 }
