@@ -2,6 +2,7 @@ export interface DropdownProps {
   options?: string[];
   type?: DropdownType;
   className?: string;
+  label?: string;
   onChange: (value: string) => void;
 }
 

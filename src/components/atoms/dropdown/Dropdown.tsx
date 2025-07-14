@@ -2,12 +2,13 @@ import styles from './Dropdown.module.css';
 import { DropdownProps, DropdownType } from './Dropdown.types';
 import { countries, getEmojiFlag } from 'countries-list';
 import type { TCountryCode } from 'countries-list';
-
+import { v4 as uuid } from 'uuid';
 const Dropdown: React.FC<DropdownProps> = ({
   options,
   className = '',
   onChange,
-  type
+  type,
+  label
 }) => {
   const buildOptions = () => {
     if (options) {
@@ -38,13 +39,24 @@ const Dropdown: React.FC<DropdownProps> = ({
         });
     }
   };
+  const labelText =
+    label ||
+    (type === DropdownType.country ? 'Select Country' : 'Select Option');
+  const selectId = `dropdown-${type || 'custom'}-${uuid()}`; // Unique ID for accessibility
+
   return (
-    <select
-      onChange={(e) => onChange(e.target.value)}
-      className={`${styles.dropdown} ${className}`}
-    >
-      {buildOptions()}
-    </select>
+    <>
+      <label className={styles.label} htmlFor={selectId}>
+        {labelText}
+      </label>
+      <select
+        id={selectId}
+        onChange={(e) => onChange(e.target.value)}
+        className={`${styles.dropdown} ${className}`}
+      >
+        {buildOptions()}
+      </select>
+    </>
   );
 };
 

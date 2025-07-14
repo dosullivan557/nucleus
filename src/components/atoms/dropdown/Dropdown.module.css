@@ -13,3 +13,10 @@
   cursor: pointer;
   transition: background-color 0.2s;
 }
+
+.label {
+  margin-right: 20px;
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+}
