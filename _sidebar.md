@@ -3,6 +3,7 @@
   - atoms/
     - [button](components/atoms/button)
     - [chip](components/atoms/chip)
+    - [dropdown](components/atoms/dropdown)
     - [textfield](components/atoms/textfield)
 - [components](components)
 - [getting-started](getting-started)
