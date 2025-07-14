@@ -1,9 +1,6 @@
 name: 'Chromatic Deployment'
 
-on:
-  pull_request:
-    branches:
-      - main  # Trigger on PRs into the main branch
+on: [push]
 
 jobs:
   chromatic-deployment:
