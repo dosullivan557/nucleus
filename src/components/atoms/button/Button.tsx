@@ -1,7 +1,14 @@
 import styles from './Button.module.css';
 
-import { type ButtonPropsTypes } from './Button.types';
-const Button: React.FC<ButtonPropsTypes> = ({
+export interface ButtonProps {
+  children: React.ReactNode;
+  onClick?: () => void;
+  className?: string;
+  disabled?: boolean;
+  variant?: 'primary' | 'secondary';
+}
+
+const Button: React.FC<ButtonProps> = ({
   children,
   onClick,
   className = '',

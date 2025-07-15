@@ -1,5 +1,14 @@
 import styles from './Textfield.module.css';
-import { TextfieldProps } from './Textfield.types';
+export interface TextfieldProps {
+  label?: string;
+  placeholder?: string;
+  value?: string;
+  disabled?: boolean;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  className?: string;
+  type?: 'text' | 'password';
+}
+
 const Textfield: React.FC<TextfieldProps> = ({
   disabled = false,
   value = '',

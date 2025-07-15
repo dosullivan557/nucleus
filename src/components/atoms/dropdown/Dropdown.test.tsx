@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import Dropdown from './Dropdown';
-import { DropdownProps } from './Dropdown.types';
+import { DropdownProps } from './Dropdown';
 import '@testing-library/jest-dom';
 
 describe('Dropdown', () => {
