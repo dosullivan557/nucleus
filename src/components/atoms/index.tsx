@@ -1,15 +1,17 @@
+import Avatar from './avatar/Avatar';
+import type { AvatarProps } from './avatar/Avatar';
+
 import Button from './button/Button';
-import * as ButtonTypes from './button/Button.types';
+import type { ButtonProps } from './button/Button';
 
 import Chip from './chip/Chip';
-import * as ChipTypes from './chip/Chip.types';
+import type { ChipProps } from './chip/Chip';
 
 import Dropdown from './dropdown/Dropdown';
-import * as DropdownTypes from './dropdown/Dropdown.types';
+import type { DropdownProps } from './dropdown/Dropdown';
 
 import Textfield from './textfield/Textfield';
-import * as TextfieldTypes from './textfield/Textfield.types';
+import type { TextfieldProps } from './textfield/Textfield';
 
-export { Button, Chip, Dropdown, Textfield };
-
-export type { ButtonTypes, ChipTypes, DropdownTypes, TextfieldTypes };
+export { Avatar, Button, Chip, Dropdown, Textfield };
+export type { AvatarProps, ButtonProps, ChipProps, DropdownProps, TextfieldProps };
