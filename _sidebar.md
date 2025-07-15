@@ -1,6 +1,7 @@
 - components/
   - [Atoms](components/Atoms)
   - atoms/
+    - [avatar](components/atoms/avatar)
     - [button](components/atoms/button)
     - [chip](components/atoms/chip)
     - [dropdown](components/atoms/dropdown)
