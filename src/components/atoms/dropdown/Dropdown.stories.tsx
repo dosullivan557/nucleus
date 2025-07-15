@@ -1,7 +1,7 @@
 /* eslint-disable no-console*/
 import { Meta, StoryObj } from '@storybook/react';
 import Dropdown from './Dropdown';
-import { DropdownType } from './Dropdown.types';
+import { DropdownType } from './Dropdown';
 
 const meta: Meta<typeof Dropdown> = {
   title: 'Atoms/Dropdown',
