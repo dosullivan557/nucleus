@@ -14,4 +14,10 @@ import Textfield from './textfield/Textfield';
 import type { TextfieldProps } from './textfield/Textfield';
 
 export { Avatar, Button, Chip, Dropdown, Textfield };
-export type { AvatarProps, ButtonProps, ChipProps, DropdownProps, TextfieldProps };
+export type {
+  AvatarProps,
+  ButtonProps,
+  ChipProps,
+  DropdownProps,
+  TextfieldProps
+};
