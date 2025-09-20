@@ -50,3 +50,19 @@ export const Password: Story = {
     value: ''
   }
 };
+export const Required: Story = {
+  args: {
+    type: 'text',
+    placeholder: 'This is required',
+    value: '',
+    required: true
+  }
+};
+export const Multiline: Story = {
+  args: {
+    type: 'text',
+    placeholder: 'This is required',
+    value: 'a',
+    multiline: true
+  }
+};
